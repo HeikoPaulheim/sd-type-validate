@@ -16,6 +16,7 @@ public class Runner {
 			loadFiles.loadProperties("./enwiki-20151002-mappingbased-objects-uncleaned.ttl");
 			loadFiles.createPropertyIndices();
 			loadFiles.loadTypes("./enwiki-20151002-instance-types-transitive.ttl");
+			loadFiles.createTypeIndices();
 			loadFiles.loadDisambiguations("./enwiki-20151002-disambiguations-unredirected.ttl");
 			loadFiles.createDisambiguationIndices();
 			computeBaseStatistics.computeGlobalTypeDistribution();
